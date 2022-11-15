@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho DIO</title>
+</head>
+
+<body>
+    <h1 id="inicio">Conteúdo que Aprendemos no Curso</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#inspetor">Inspetor de Elementos</a></li>
+        <li><a href="#html">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#atributos_tags">Atributos das Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+    <h2 id="inspetor">Inspetor de Elementos</h2>
+    <h3>O que é a ferramenta de inspecionar elemento?</h3>
+    <p>A ferramenta de <i>inspecionar elemento</i> é um utilitário que permite visualizar o <mark>código-fonte</mark> de
+        qualquer página
+        web. Além disso, você pode usá-la para fazer alterações temporárias e ver os resultados em tempo real, deixando
+        o <u>código-fonte</u> original intacto.
+        Isso é extremamente útil se você precisa testar uma alteração ou diagnosticar um problema. Também pode ser de
+        grande valia se você encontrar um site com um recurso de que goste e estiver curioso para saber como ele foi
+        implementado.
+        A maioria dos principais navegadores, incluindo Chrome, Firefox e Safari, oferece algumas variações dessa
+        ferramenta. Vamos ver como acessá-la em cada um deles.</p>
+
+    <h3>Como inspecionar elemento?</h3>
+    <ul>
+        <li>Clique no menu de três pontos no canto superior direito da janela e escolha Mais ferramentas > Ferramenta de
+            desenvolvedor.</li>
+    </ul>
+    <img src="imagens/2.png" alt="elemento">
+    <p>Quando a ferramenta for aberta, ela apresentará uma visualização dividida. Por um lado, você tem uma prévia do
+        site que está inspecionando, junto de alguns controles para ajustar a visualização e simular diferentes
+        resoluções de tela.
+        Por outro lado, existem várias seções contendo informações. O painel superior é o HTML da página. Passar o mouse
+        sobre parte do código destacará a área apropriada da página à direita. Abaixo, estará um painel com informações
+        sobre a página. Os detalhes exibidos nele variam dependendo da guia selecionada.</p>
+    <img src="imagens/1.png" alt="tela inspeção">
+    <p>O painel inferior simplesmente contém notícias e atualizações nas ferramentas do desenvolvedor do Chrome. Você
+        pode fechá-lo com segurança para reduzir a desordem clicando em X.
+        Finalmente, você pode alterar a localização desses painéis clicando no menu de três pontos no canto superior
+        direito do painel HTML e selecionando uma das opções de encaixe.</p><small><a href="#inicio">Voltar</a></small>
+    <hr>
+
+    <h2>Estrutura Básica do HTML</h2>
+    <h3>Código básico de HTML</h3>
+    <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável.
+        Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os
+        editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não
+        precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:</p>
+    <img src="imagens/inicio_html.png" alt="">
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das
+        tags essenciais, conforme a a seguinte estrutura:</p>
+    <ul>
+        <li>Definição do documento (doctype)</li>
+        <li>Cabeça (head)</li>
+        <li>Corpo (body)</li>
+    </ul>
+    <h4>Doctype - Definindo o documento</h4>
+    <p>Uma coisa importante: SEMPRE deve existir o doctype, que é este código <small>
+            < !DOCTYPE html>
+        </small>.</p>
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o
+        código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma
+        possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+    <h4>HEAD</h4>
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos,
+        de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e
+        metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag
+        <small><strong>head</strong></small>.
+    </p>
+    <h4>BODY</h4>
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer
+        texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons,
+        miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados
+        (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par
+        de tags <small><strong>
+                < body>
+            </strong></small> e <small><strong>
+                < /body>
+            </strong></small>.</p>
+    <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os
+        resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do
+        seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir
+        qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar
+        marcada no cabeçalho do mesmo documento.</p>
+    <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde
+        serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+    <hr>
+
+    <h2>Tags</h2>
+    <h3>Falando sobre Tags</h3>
+    <h4>Tag HTML</h4>
+    <p>São <sub>utilizados</sub> para informar ao <sup>navegador</sup> que tipo de estrutura é essa que está sendo
+        construída, podendo ser
+        títulos, parágrafos, imagens, links, entre outros.</p>
+
+    <h4>Tag Head</h4>
+    <p>A tag head faz parte da estrutura básica do documento, sua finalidade é definir o cabeçalho do documento com
+        informações que não serão exibidas dentro do conteúdo da página.</p>
+
+    <h4>Tag i</h4>
+    <p>Normalmente, é apresentado com o uso do tipo "itálico".</p>
+
+    <h4>Tag Strong</h4>
+    <blockquote
+        cite="https://web.dio.me/lab/criar-uma-pagina-web-utilizando-as-tags-aprendidas/learning/fc56c26e-95a4-419d-a5bf-48826e676952">
+        O elemento < strong> é utilizado em conteúdos que são de "grande importância", incluindo coisas de urgentes
+            (como
+            alertas).</blockquote>
+
+   
+
+</body>
+
+</html>
